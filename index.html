@@ -4,8 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-03</title>
+    <!-- daisy ui cnd -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font class -->
+    <style>
+      .manrope-font{
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+    <!-- icon kits -->
+    <script src="https://kit.fontawesome.com/b5126b8440.js" crossorigin="anonymous"></script>
+    <!-- font color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'house-primary': '#ABEF5F',
+              }
+            }
+          }
+        }
+      </script>
 </head>
-<body>
-    
+<body class="manrope-font">
+    <header class="container mx-auto px-10">
+        <div class="navbar">
+            <div class="navbar-start flex">
+              <i class="fa-solid fa-arrow-right bg-house-primary rounded rounded-full p-1 -rotate-45"></i>
+              <a class="font-bold text-3xl">Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end  gap-5 invisible lg:visible">
+              <i class="fa-solid fa-magnifying-glass bg-gray-100 p-3 rounded-full"></i>
+              <i class="fa-solid fa-cart-shopping bg-gray-100 p-3 rounded-full"></i>
+              <a class="btn font-bold text-base bg-house-primary rounded-full">Book Consult <i class="fa-solid fa-arrow-right bg-black text-white  rounded rounded-full p-1 -rotate-45"></i></a>
+            </div>
+            <div tabindex="0" role="button" class="navbar-center btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+            </div>
+          </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
