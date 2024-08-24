@@ -36,7 +36,7 @@
 <body class="manrope-font">
     <header class="container mx-auto px-10">
         <!-- navbar -->
-        <div class="navbar">
+        <div class="navbar mb-10">
             <div class="navbar-start flex">
               <i class="fa-solid fa-arrow-right bg-house-primary rounded rounded-full p-1 -rotate-45"></i>
               <a class="font-bold text-3xl">Rinterio</a>
@@ -71,7 +71,7 @@
             </div>
           </div>
           <!-- hero section -->
-          <div class="hero min-h-screen">
+          <div class="hero min-h-screen mb-10">
             <div class="hero-content text-center">
               <div class="">
                 <img class="lg:ml-24" src="assets/banner.png" alt="">
@@ -83,35 +83,71 @@
           </div>
     </header>
     <main>
-       <!-- about section -->
+       <section class="bg-base-200">
+        <!-- about section -->
        <section>
-         <div class="hero bg-base-200 min-h-screen">
-           <div class="hero-content flex">
-            <div>
-              <img class="mb-3 -ml-10" src="assets/Vector.png" alt="">
-              <button class="btn font-bold mb-5 text-base rounded-full"><i class="fa-solid fa-arrow-right rounded rounded-full p-1"></i>About Us</button>
-              <h1 class="text-5xl font-bold">We design thoughtful, <br> liveable spaces</h1>
-              <p class="py-6">we are the best designer for barn house and we look forword for our client.</p>
-              <div class="collapse flex collapse-title bg-white mb-5">
-                <img src="assets/commercial.png" alt="">
-                <div>
-                  <h3 class="font-bold text-xl">Commercial</h3> 
-                  <p>It is for industrial revolution</p>
-                </div>
-              </div>
-              <div class="collapse flex collapse-title bg-white">
-                <img src="assets/residential.png" alt="">
-                <div>
-                  <h3 class="font-bold text-xl">Residential</h3> 
-                  <p>It is for private house revolution</p>
-                </div>
-              </div>
+        <div class="hero min-h-screen">
+          <div class="hero-content flex flex-col lg:flex-row lg:space-x-7">
+           <div class="text-center lg:text-left">
+             <img class="mb-3 -ml-10 invisible lg:visible" src="assets/Vector.png" alt="">
+             <button class="btn font-bold mb-5 text-base rounded-full"><i class="fa-solid fa-arrow-right rounded rounded-full p-1"></i>About Us</button>
+             <h1 class="text-5xl font-bold">We design thoughtful, <br> liveable spaces</h1>
+             <p class="py-6">we are the best designer for barn house and <br> we look forword for our client.</p>
+             <div class="collapse flex collapse-title bg-white mb-5 gap-4">
+               <img src="assets/commercial.png" alt="">
+               <div>
+                 <h3 class="font-bold text-xl text-left">Commercial</h3> 
+                 <p>It is for industrial revolution</p>
+               </div>
              </div>
-             <img src="assets/Rectangle.png" class="max-w-sm rounded-lg shadow-2xl" />
+             <div class="collapse flex collapse-title bg-white gap-4">
+               <img src="assets/residential.png" alt="">
+               <div>
+                 <h3 class="font-bold text-xl text-left">Residential</h3> 
+                 <p>It is for private house revolution</p>
+               </div>
+             </div>
+            </div>
+            <img src="assets/Rectangle.png" class="max-w-md lg:max-w-lg rounded-lg shadow-2xl lg:mt-6" />
+          </div>
+        </div>
+      </section> 
+      <!-- our work section -->
+       <section class="mb-10 -mt-24">
+         <div class="hero min-h-screen">
+           <div class="hero-content text-center">
+             <div>
+               <button class="btn font-bold mb-5 text-base rounded-full"><i class="fa-solid fa-arrow-right rounded rounded-full p-1"></i>How we works</button>
+               <h1 class="text-5xl font-bold">Our Works Process</h1>
+               <p class="py-6">We work gently and process the work as first as we can.</p>
+             </div>
            </div>
          </div>
-       </section>
-    </main>
+         <div class="grid grid-cols-1 lg:grid-cols-4 ml-36 lg:ml-24 -mt-24 gap-5">
+           <div class="bg-pink-200 w-48 h-40 rounded rounded-xl">
+            <img class="mb-5 ml-3" src="assets/concept.png" alt="">
+            <h3 class="font-bold mb-3 ml-3">Concept</h3>
+            <p class="ml-3">Our concept is basic strategie.</p>
+           </div>
+           <div class="bg-yellow-200 w-48 h-40 rounded rounded-xl">
+            <img class="mb-5 ml-3" src="assets/flow-chart.png" alt="">
+            <h3 class="font-bold mb-3 ml-3">Design Process</h3>
+            <p class="ml-3">Our design process is the best of all.</p>
+           </div>
+           <div class="bg-green-200 w-48 h-40 rounded rounded-xl">
+            <img class="mb-5 ml-3" src="assets/vision.png" alt="">
+            <h3 class="font-bold mb-3 ml-3">Supervision</h3>
+            <p class="ml-3">We have our own supervision.</p>
+           </div>
+           <div class="bg-blue-200 w-48 h-40 rounded rounded-xl">
+            <img class="mb-5 ml-3" src="assets/budget-planning.png" alt="">
+            <h3 class="font-bold mb-3 ml-3">Budget Planning</h3>
+            <p class="ml-3">Our customer budget is our own priority.</p>
+           </div>
+        </div>
+      </section>
+    </section>
+  </main>
     <footer>
 
     </footer>
